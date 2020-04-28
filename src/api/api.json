@@ -1,0 +1,275 @@
+{
+  "blogs":[
+    {
+      "field": "react",
+      "icon": "/images/react.png",
+      "date": "Apr 26, 2020",
+      "title": "React Tutorial For Beginners",
+      "info" : "5 videos",
+      "auther": "Dev Ed",
+      "link": "https://www.youtube.com/playlist?list=PLDyQo7g0_nsVHmyZZpVJyFn5ojlboVEhE"
+    },
+    {
+      "field": "react",
+      "icon": "/images/react.png",
+      "date": "Apr 27, 2020",
+      "title": "React JS - Full Course for Beginners ",
+      "info" : "5 hours",
+      "auther": "freeCodeCamp",
+      "link": "https://www.youtube.com/watch?v=DLX62G4lc44"
+    },
+    {
+      "field": "javascript",
+      "icon": "/images/javascript.png",
+      "date": "Apr 27, 2020",
+      "title": "JavaScript Crash Course",
+      "info" : "46 videos",
+      "auther": "Traversy Media",
+      "link": "https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX"
+    },
+    {
+      "field": "javascript",
+      "icon": "/images/javascript.png",
+      "date": "Apr 27, 2020",
+      "title": "Learn JavaScript In Arabic",
+      "info" : "65 video",
+      "auther": "Elzero Web School",
+      "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAw6p0z0Ek0OjPzeXoqlFlCh"
+    },
+    {
+      "field": "html",
+      "icon": "/images/html5.png",
+      "date": "Apr 27, 2020",
+      "title": "Learn HTML5 In Arabic",
+      "info" : "36 video",
+      "auther": "Elzero Web School",
+      "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+    },
+    {
+      "field": "html",
+      "icon": "/images/html5.png",
+      "date": "Apr 27, 2020",
+      "title": "Learn HTML5 - full course",
+      "info" : "56 videos",
+      "auther": "freeCodeCamp",
+      "link": "https://www.youtube.com/watch?v=DPnqb74Smug"
+    },
+    {
+      "field": "css",
+      "icon": "/images/css3.png",
+      "date": "Apr 27, 2020",
+      "title": "Learn CSS3 In Arabic",
+      "info" : "52 min",
+      "auther": "Elzero Web School",
+      "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAyEyQaHOHO1HJtmSgGt07VC"
+    },
+    {
+      "field": "css",
+      "icon": "/images/css3.png",
+      "date": "Apr 27, 2020",
+      "title": "CSS Crash Course ",
+      "info" : "1:25 hours",
+      "auther": "Traversy Media",
+      "link": "https://www.youtube.com/watch?v=yfoY53QXEnI"
+    },
+    {
+      "field": "react",
+      "icon": "/images/react.png",
+      "date": "Apr 27, 2020",
+      "title": "reactjs example",
+      "info" : "",
+      "auther": "reactjs examples",
+      "link": "https://reactjsexample.com/"
+    },
+    {
+      "field": "react",
+      "icon": "/images/react.png",
+      "date": "Apr 27, 2020",
+      "title": "Aesome react",
+      "info" : "",
+      "auther": "react libhunt",
+      "link": "https://react.libhunt.com/"
+    },
+    {
+      "field": "sass",
+      "icon": "/images/sass.png",
+      "date": "Apr 27, 2020",
+      "title": "Begin Working with Sass",
+      "info" : "23 video",
+      "auther": "Elzero Web School",
+      "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAz6bF7qObm2a1mLN_WHAWQo"
+    },
+    {
+      "field": "sass",
+      "icon": "/images/sass.png",
+      "date": "Apr 27, 2020",
+      "title": "SASS Tutorial",
+      "info" : "12 video",
+      "auther": "The Net Ninja",
+      "link": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA"
+    },
+    {
+      "field": "bootstrap",
+      "icon": "/images/bootstrap.png",
+      "date": "Apr 27, 2020",
+      "title": "Design Using Bootstrap 4",
+      "info" : "29 video",
+      "auther": "Elzero Web School",
+      "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAy0dU3C3_lNRTSTtqePEsI2"
+    },
+    {
+      "field": "bootstrap",
+      "icon": "/images/bootstrap.png",
+      "date": "Apr 27, 2020",
+      "title": "Bootstrap 4 Tutorials",
+      "info" : "12 video",
+      "auther": "The Net Ninja",
+      "link": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv"
+    },
+    {
+      "field": "jquery",
+      "icon": "/images/jquery.png",
+      "date": "Apr 27, 2020",
+      "title": "Learn jQuery in Arabic",
+      "info" : "53 video",
+      "auther": "Elzero Web School",
+      "link": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAwXDFEEpc8TT6MFbDAC5XNB"
+    },
+    {
+      "field": "jquery",
+      "icon": "/images/jquery.png",
+      "date": "Apr 27, 2020",
+      "title": "jQuery Tutorials for Beginners",
+      "info" : "26 video",
+      "auther": "The Net Ninja",
+      "link": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNUJ0j6ccnOAcJIPoTRpO4"
+    },
+    {
+      "field": "javascript",
+      "icon": "/images/javascript.png",
+      "date": "Apr 27, 2020",
+      "title": "JavaScript Tutorials for Beginners",
+      "info" : "47 video",
+      "auther": "The Net Ninja",
+      "link": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET"
+    },
+    {
+      "field": "pexels photo",
+      "icon": "/images/pexels.jpg",
+      "date": "Apr 27, 2020",
+      "title": "website for photo",
+      "info" : "",
+      "auther": "pexels",
+      "link": "https://www.pexels.com/"
+    },
+    {
+      "field": "undrow photo",
+      "icon": "/images/undraw.png",
+      "date": "Apr 27, 2020",
+      "title": "website for illustrations photo",
+      "info" : "",
+      "auther": "unDraw",
+      "link": "https://undraw.co/illustrations"
+    },
+    {
+      "field": "emoji",
+      "icon": "/images/emoji.png",
+      "date": "Apr 27, 2020",
+      "title": "Use emoji in your website",
+      "info" : "2min read",
+      "auther": "w3schools",
+      "link": "https://www.w3schools.com/charsets/ref_emoji_smileys.asp"
+    },
+    {
+      "field": "react",
+      "icon": "/images/react.png",
+      "date": "Apr 27, 2020",
+      "title": "react hooks",
+      "info" : "10 videos",
+      "auther": "Medhat Dawoud",
+      "link": "https://www.youtube.com/playlist?list=PLANjs1H0YEnRE78sLw6vd_4LXoPg5enIM"
+    }
+  ],
+  "projects":[
+    {
+      "color": "#4299E1",
+      "name":"store",
+      "descreption":"Small store to show the product and details for every single product then you can add it to cart and buy it",
+      "use": "react-js, RestApi , redux, localStorage, Sass",
+      "field": "react",
+      "date": "Apr 16, 2020",
+      "githubLink": "https://github.com/OmarAliSoliman/mystore-reactjs",
+      "directLink": "https://omar-store.netlify.app/"
+    },
+    {
+      "color": "#48BB78",
+      "name":"covid-19",
+      "descreption":"Small project about covid-19 statisticses you can just select the country and search about it or you can show more information about country",
+      "use": "react-js, RestApi, Sass",
+      "field": "react",
+      "date": "mar 30, 2020",
+      "githubLink": "https://github.com/OmarAliSoliman/react-js-covi19",
+      "directLink": "https://omar-covid-19.netlify.app/"
+    },
+    {
+      "color": "#F56565",
+      "name":"Handrty-Home page",
+      "descreption":"Handroty is project for freelancing jops",
+      "use": "HTML5, CSS3, Sass, JS, JQ, Bootstrap",
+      "field": "",
+      "date": "mar 10, 2020",
+      "githubLink": "https://github.com/OmarAliSoliman/mina",
+      "directLink": "https://omaralisoliman.github.io/mina/"
+    },
+    {
+      "color": "#9F7AEA",
+      "name":"Red",
+      "descreption":"Website to show the information about blood-donation app use for blod donation",
+      "field": "",
+      "date": "Jun 5, 2020",
+      "use": "HTML5, CSS3, Sass, JS, JQ, Bootstrap",
+      "githubLink": "https://github.com/OmarAliSoliman/blood-donation",
+      "directLink": "http://redbloodapp.com/"
+    },
+    {
+      "color": "#4299E1",
+      "name":"Form animation",
+      "descreption":"Small project for form with some animation",
+      "field": "JS",
+      "date": "",
+      "use": "JS, Bootstrap",
+      "githubLink": "https://github.com/OmarAliSoliman/formAnimation",
+      "directLink": "https://omaralisoliman.github.io/formAnimation/"
+    },
+    {
+      "color": "#F56565",
+      "name":"HEMS",
+      "descreption":"Gradution project use to connect the hosiptal together and make one account for the patient shared between this hospitals",
+      "field": "",
+      "date": "Nov 5, 2019",
+      "use": "HTML5, CSS3, JS, JQ, Bootstrap",
+      "githubLink": "https://github.com/OmarAliSoliman/Graduation-Project-version-1",
+      "directLink": "https://omaralisoliman.github.io/Graduation-Project-version-1/"
+    },
+    {
+      "color": "#4299E1",
+      "name":"dahab tall",
+      "descreption":"Website to show some of product for the dahab tall company",
+      "field": "",
+      "date": "Feb 5, 2019",
+      "use": "HTML5, CSS3, JS, JQ, Bootstrap",
+      "githubLink": "https://github.com/OmarAliSoliman/final-final-category",
+      "directLink": "https://dahbtall.com/"
+    },
+    {
+      "color": "#48BB78",
+      "name":"Weight Converter",
+      "descreption":"Small project for convert the weight",
+      "field": "JS",
+      "date": "",
+      "use": "JS, Bootstrap",
+      "githubLink": "https://github.com/OmarAliSoliman/WeightConverter",
+      "directLink": "https://omaralisoliman.github.io/WeightConverter/"
+    }
+  ]
+}
