@@ -22,10 +22,10 @@ function About() {
               <p className="about-me mt-5">
                 <span role="img" aria-label="emoji-o">🅾</span> I'm Omar Ali, a Front End Developer from Egypt <span role="img" aria-label="emoji-egypt">🇪🇬</span>. living in Assuit city.
                 I'm in last year at computer science faculity <span role="img" aria-label="emoji-gradute">🎓</span>. I'm using web technec to make an awesome
-                website<span role="img" aria-label="emoji-labtop">💻</span>.
+                website <span role="img" aria-label="emoji-labtop">💻</span>.
               </p>
               <p className="about-me mt-2">
-                I love Gym <span role="img" aria-label="emoji-gym">💪</span> and my favorite animal is panda<span role="img" aria-label="emoji-panda">🐼</span> 
+                I love Gym <span role="img" aria-label="emoji-gym">💪</span> and my favorite animal is panda <span role="img" aria-label="emoji-panda">🐼</span> 
               </p>
               <div className="skills">
                 <h4>Skills</h4>
