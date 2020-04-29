@@ -9,12 +9,14 @@ import Blog from '../components/Blog';
 
 function Blogs() {
   const [blogs, setBlogs] = useState([]);
+  const[filterblogs, setfilterBlogs] = useState([]);
   const [search, setSearch] = useState('');
   const inputFocus = useRef();
   useEffect(()=>{
     getdate()
     .then((data)=>{
       setBlogs(data.blogs);
+      setfilterBlogs(data.blogs);
       // setBlogs(data.data.blogs);
     })
     inputFocus.current.focus();
@@ -54,13 +56,29 @@ function Blogs() {
   const filterField=(name)=>{
     var value = name.target.innerHTML;
     var newBlogs = [...blogs];
-    newBlogs =[];
-    blogs.map((blog, index)=>{
-      if(blog.field === value){
-        newBlogs.push(blog)
-      }
-    })
-    setBlogs(newBlogs);
+    if(value === "all"){
+      setBlogs(filterblogs);
+    }else{
+      newBlogs =[];
+      filterblogs.map((blog, index)=>{
+        if(blog.field === value){
+          newBlogs.push(blog)
+        }
+      })
+      setBlogs(newBlogs);
+    }
+  }
+
+  const selectChange=(e)=>{
+    var sortValue = e.target.value;
+    console.log(sortValue);
+    if(sortValue === "sortDataModfied"){
+      sortDataModfied();
+    }else if(sortValue === "sortTitle"){
+      sortTitle();
+    }else if(sortValue === "sortName"){
+      sortName();
+    }
   }
 
   return (
@@ -76,15 +94,20 @@ function Blogs() {
             <input type="text" ref={inputFocus} value={search} onChange={updateSearch} className="form-control" placeholder="search..." aria-label="Recipient's username" aria-describedby="button-addon2" />
           </div>
         </div>
-        <div className="col-sm-12 col-md-12">
-          <div className="filtering">
-            <button className="shadow mt-2 sort-data-modfied" onClick={sortDataModfied}>date</button>
-            <button className="shadow mt-2 sort-title" onClick={sortTitle}>title</button>
-            <button className="shadow mt-2 sort-name" onClick={sortName}>field</button>
+        <div className="col-sm-12 col-md-12 mt-3">
+          <div className="form-group filtering">
+            <select className="form-control" defaultValue={"DEFAULT"} id="sel1" onChange={selectChange}>
+              <option disabled value={"DEFAULT"}>Sort by..</option>
+              <option value="sortDataModfied">date</option>
+              <option value="sortTitle">title</option>
+              <option value="sortName">field</option>
+            </select>
           </div>
         </div>
         <div className="col-sm-12 col-md-12 mt-3">
+          <h5 className="filter-by mt-3 text-capitalize">filter by</h5>
           <div className="filtering filtering-name">
+            <button name="filterByfield" className="shadow mt-2 sort-by-field" onClick={(name)=>filterField(name)}>all</button>
             <button name="filterByfield" className="shadow mt-2 sort-by-field" onClick={(name)=>filterField(name)}>html</button>
             <button name="filterByfield" className="shadow mt-2 sort-by-field" onClick={(name)=>filterField(name)}>css</button>
             <button name="filterByfield" className="shadow mt-2 sort-by-field" onClick={(name)=>filterField(name)}>javascript</button>

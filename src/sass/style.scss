@@ -265,8 +265,8 @@ nav{
 
 // blogs bage
 .blogs{
+  font-family: calibraRegular;
   .blogs-about{
-    font-family: calibraRegular;
     font-size: 20px;
   }
   .input-group{
@@ -283,6 +283,9 @@ nav{
   .filtering{
     width: 50%;
     margin-bottom: -10px !important;
+    select{
+      font-size: 18px;
+    }
     button{
       font-family: calibraRegular;
       border: 0 !important;
@@ -311,6 +314,10 @@ nav{
       background-color: $linkedinColor;
       border: 1px solid $linkedinColor;
     }
+  }
+  .filter-by{
+    font-size: 20px;
+    margin-bottom: 0 !important;
   }
 }
 
