@@ -1,11 +1,15 @@
-$mainColor: #26293A;
+// var(--manColor): #26293a;
 $whiteColor: #fff;
 $facebbokColor: #3b5999;
-$whatsappColor: #25D366;
-$linkedinColor: #0077B5;
-$githubColor: #24292E; 
-$twitterColor: #55ACEE;
+$whatsappColor: #25d366;
+$linkedinColor: #0077b5;
+$githubColor: #24292e;
+$twitterColor: #55acee;
 $darkModeColor: #1a1919;
+
+:root{
+  --manColor: #26293a;
+}
 
 @font-face {
   font-family: calibraRegular;
@@ -17,69 +21,155 @@ $darkModeColor: #1a1919;
   src: url("../fonts/CalibreThin.otf");
 }
 
-.light-mode{
+.light-mode {
   background-color: #fff;
-  transition: background-color .25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
-.dark-mode{
+.dark-mode {
   background-color: $darkModeColor;
-  transition: background-color .25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
-.dark-mode{
-  nav{
+.dark-mode {
+  nav {
     background-color: $darkModeColor !important;
     border: 1px solid $darkModeColor !important;
     color: #999;
   }
-  .jumbotron{
+  .jumbotron {
     background-color: $darkModeColor !important;
     border: 1px solid $darkModeColor !important;
     color: #999;
   }
-  .blogs{
-    .blogs-about{
+  .blogs {
+    .blogs-about {
       color: #fff;
     }
   }
-  .about-page{
+  .about-page {
     color: #fff;
   }
-  .project-component{
-    .card{
+  .project-component {
+    .card {
       border-radius: 0 !important;
-      .card-body{
+      .card-body {
         color: #000;
       }
     }
   }
-  .filter-by{
+  .filter-by {
     color: #fff;
   }
-  .footer{
+  .footer {
     background-color: $darkModeColor !important;
   }
 }
 
+// setting box
+.setting-box {
+  box-sizing: border-box;
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+  right: -150px;
+  top: 20%;
+  height: 20vh;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 1s ease;
+  .setting-icon {
+    position: absolute;
+    top: 35%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    left: -35px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  .option-box {
+    box-sizing: border-box;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    text-align: center;
+    padding-top: 18px;
+    span {
+      width: 21px;
+      height: 21px;
+      margin: 2px;
+      border-radius: 50%;
+      float: left;
+      cursor: pointer;
+      // opacity: .5;
+      // transition: all .5s ease;
+    }
+    // .active{
+    //   opacity: 1;
+    //   transition: all .5s ease;
+    //   border: 2px solid #999 !important;
+    // }
+    .span1{
+      background-color: #26293a;
+      border: 1px solid #26293a;
+    }
+    .span2{
+      background-color: #551743;
+      border: 1px solid #551743;
+    }
+    .span3{
+      background-color: #5E44D3;
+      border: 1px solid #5E44D3;
+    }
+    .span4{
+      background-color: #592C8F;
+      border: 1px solid #592C8F;
+    }
+    .span5{
+      background-color: #B90568;
+      border: 1px solid #B90568;
+    }
+  }
+  .no-avilble{
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-family: calibraRegular;
+    span{
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $facebbokColor;
+    }
+  }
+}
+
+.spinner-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 // start navbar
-nav{
+nav {
   height: 60px;
   font-family: calibraRegular;
-  border: 1px solid $mainColor;
+  border: 1px solid var(--manColor);
   font-size: 20px;
   padding: 0 !important;
-  background-color: $mainColor !important;
-  .navbar-nav{
+  background-color: var(--manColor) !important;
+  .navbar-nav {
     flex-direction: row !important;
     padding: 0 !important;
-    .nav-link{
+    .nav-link {
       margin-right: 10px;
       height: 60px;
       padding: 16px;
       color: $whiteColor !important;
     }
-    .active{
+    .active {
       background-color: $whiteColor;
       color: $linkedinColor !important;
       font-weight: bold;
@@ -98,70 +188,77 @@ nav{
 // start blog bage
 
 // start jumbotron
-.jumbotron{
-  background-color: $mainColor !important;
+.jumbotron {
+  background-color: var(--manColor) !important;
   border-radius: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 20px !important;
   margin-bottom: 0 !important;
-  border: 1px solid $mainColor;
+  border: 1px solid var(--manColor);
   font-family: calibraRegular;
-  .content{
-    .image-div{
+  .content {
+    .image-div {
       width: 90px;
       height: 90px;
       margin: 0 auto;
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('/images/profile-image.jpg');
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url("/images/profile-image.jpg");
       background-size: 150%;
       background-position: top;
       border-radius: 50%;
       transition: all 1s ease-in-out;
-      &:hover{
+      &:hover {
         background-size: 100%;
         background-position: center;
       }
     }
-    h5,p{
+    h5,
+    p {
       padding: 0;
       margin: 0;
       text-transform: capitalize;
     }
-    h5{
+    h5 {
       color: $whiteColor;
     }
-    p{
-      color: #BEBFC4;
+    p {
+      color: #bebfc4;
       font-size: 15px;
     }
-    .social-account{
-      span{
+    .social-account {
+      span {
         margin-right: 10px;
-        a{
+        a {
           color: $whiteColor;
-          i{
+          i {
             font-size: 15px;
           }
         }
       }
     }
   }
-  .change-dark-mode{
+  .change-dark-mode {
     position: absolute;
     right: 4%;
     top: 2%;
   }
-  .emoji-sun, .emoji-moon{
+  .emoji-sun,
+  .emoji-moon {
     font-size: 25px;
     margin-top: 10px;
     position: absolute;
   }
 
-  .emoji-sun{
+  .emoji-sun {
     right: 105%;
     top: -30%;
   }
 
-  .emoji-moon{
+  .emoji-moon {
     right: -33%;
     top: -30%;
   }
@@ -193,7 +290,8 @@ nav{
     margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
   }
-  .toggle-switch-inner::before, .toggle-switch-inner::after {
+  .toggle-switch-inner::before,
+  .toggle-switch-inner::after {
     display: block;
     float: left;
     width: 50%;
@@ -246,11 +344,11 @@ nav{
   }
   .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
     right: 0px;
-  }  
+  }
 }
 
 // date-clock
-.date-clock{
+.date-clock {
   color: $whiteColor;
   font-family: calibraRegular;
   position: absolute;
@@ -262,34 +360,34 @@ nav{
   top: 1%;
 }
 
-.time_mobile{
+.time_mobile {
   display: none;
 }
 
 // blogs bage
-.blogs{
+.blogs {
   font-family: calibraRegular;
-  .blogs-about{
+  .blogs-about {
     font-size: 20px;
   }
-  .input-group{
+  .input-group {
     width: 50% !important;
-    .form-control{
-      border: 1px solid $mainColor !important;
+    .form-control {
+      border: 1px solid var(--manColor) !important;
       font-size: 18px;
-      &:focus{
+      &:focus {
         outline: 0 !important;
-        box-shadow: 0 0 0 0.1rem $mainColor;
+        box-shadow: 0 0 0 0.1rem var(--manColor);
       }
     }
   }
-  .filtering{
+  .filtering {
     width: 50%;
     margin-bottom: -10px !important;
-    select{
+    select {
       font-size: 18px;
     }
-    button{
+    button {
       font-family: calibraRegular;
       border: 0 !important;
       font-size: 18px;
@@ -301,97 +399,97 @@ nav{
       width: 20%;
       text-transform: capitalize;
     }
-    .sort-data-modfied{
+    .sort-data-modfied {
       background-color: $facebbokColor;
       border: 1px solid $facebbokColor;
     }
-    .sort-title{
+    .sort-title {
       background-color: $twitterColor;
       border: 1px solid $twitterColor;
     }
-    .sort-name{
+    .sort-name {
       background-color: $whatsappColor;
       border: 1px solid $whatsappColor;
     }
-    .sort-by-field{
+    .sort-by-field {
       background-color: $linkedinColor;
       border: 1px solid $linkedinColor;
     }
   }
-  .filter-by{
+  .filter-by {
     font-size: 20px;
     margin-bottom: 0 !important;
   }
 }
 
 // start blog cart
-.blog{
+.blog {
   font-family: calibraRegular;
   text-transform: capitalize;
-  .card{
+  .card {
     height: 150px;
     position: relative;
-    background-color: #24292E;
-    .card-image-parent{
+    background-color: var(--manColor);
+    .card-image-parent {
       position: absolute;
       right: 5%;
       top: 54%;
       width: 12%;
     }
-    .card-text{
-      background: hsla(0,0%,100%,.95);
+    .card-text {
+      background: hsla(0, 0%, 100%, 0.95);
       padding: 10px;
-      a{
-        color: #3B5999;
+      a {
+        color: #3b5999;
         font-size: 18px;
       }
     }
-    .auther{
+    .auther {
       font-size: 18px;
       letter-spacing: 1px;
     }
-    .date{
+    .date {
       font-size: 14px;
       margin-top: -3px;
       color: #999;
     }
-    &:hover .card-text{
-      background: hsla(0,0%,100%,.99);
+    &:hover .card-text {
+      background: hsla(0, 0%, 100%, 0.99);
     }
   }
 }
 
-// about page 
-.about-page{
+// about page
+.about-page {
   font-family: calibraRegular;
-  .about-me-content{
+  .about-me-content {
     width: 90%;
     margin: 0 auto;
-    p{
+    p {
       font-size: 20px;
     }
-    .find-me{
-      span{
-        i{
+    .find-me {
+      span {
+        i {
           font-size: 25px;
           margin-right: 10px;
         }
-        .fa-facebook{ 
+        .fa-facebook {
           color: $facebbokColor;
         }
-        .fa-linkedin{
+        .fa-linkedin {
           color: $linkedinColor;
         }
-        .fa-twitter{
+        .fa-twitter {
           color: $twitterColor;
         }
-        .fa-whatsapp{
+        .fa-whatsapp {
           color: $whatsappColor;
         }
       }
     }
-    .skills{
-      img{
+    .skills {
+      img {
         width: 3%;
       }
     }
@@ -399,42 +497,43 @@ nav{
 }
 
 // project-componen
-.project-component{
+.project-component {
   position: relative;
   width: 90%;
   margin: 0 auto;
-  .card-body{
+  .card-body {
     padding: 0 !important;
     padding-left: 1rem !important;
-    padding-top: .5rem !important;
+    padding-top: 0.5rem !important;
   }
-  h5,p{
+  h5,
+  p {
     margin: 0;
     padding: 0;
   }
-  .card-title{
+  .card-title {
     font-size: 25px;
   }
-  .date{
+  .date {
     font-size: 15px;
     color: #888;
   }
-  .card-field{
+  .card-field {
     position: absolute;
     top: -1%;
-    right: -.2%;
+    right: -0.2%;
     color: #fff;
     padding: 4px;
     width: 70px;
     text-align: center;
   }
-  .card-descreption{
+  .card-descreption {
     font-size: 20px;
   }
-  .use{
+  .use {
     color: #555;
   }
-  i{
+  i {
     color: #fff;
     font-size: 25px;
     margin-top: 5px;
@@ -442,21 +541,21 @@ nav{
 }
 
 // footer
-.footer{
+.footer {
   font-family: calibraRegular;
   text-transform: capitalize;
   height: 80px;
-  background-color: $mainColor;
+  background-color: var(--manColor);
   padding-top: 14px;
-  h5{
+  h5 {
     margin: 0;
     padding: 0;
     color: $whiteColor;
   }
-  .footer-social-account{
+  .footer-social-account {
     line-height: 15px;
-    span{
-      a{
+    span {
+      a {
         color: #fff;
         font-size: 20px;
         margin-left: 10px;
@@ -466,42 +565,42 @@ nav{
 }
 
 // media Query
-@media(max-width: 800px){
-  .jumbotron{
-    .change-dark-mode{
+@media (max-width: 800px) {
+  .jumbotron {
+    .change-dark-mode {
       position: absolute;
       right: 8.5%;
       top: 2%;
     }
   }
-  .blogs{
-    .input-group{
+  .blogs {
+    .input-group {
       width: 100% !important;
     }
   }
-  .filtering-name{
+  .filtering-name {
     width: 100% !important;
     margin-bottom: -10px !important;
-    button{
+    button {
       width: 15% !important;
     }
   }
 }
 
-@media(max-width: 524px){
-  nav{
+@media (max-width: 524px) {
+  nav {
     margin-top: -1px;
   }
-  .time_mobile{
+  .time_mobile {
     display: block;
   }
-  .time_desktop{
+  .time_desktop {
     display: none;
   }
-  .filtering{
+  .filtering {
     width: 100% !important;
     margin-bottom: -10px !important;
-    button{
+    button {
       width: 32% !important;
     }
   }
